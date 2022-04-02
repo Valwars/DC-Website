@@ -14,6 +14,15 @@ if ($_GET['token'] == null) {
     header('HTTP/1.0 404 Not Found');
     die('<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"><html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL was not found on this server.</p></body></html>');
 }
+
+session_start();
+
+if (!isset($_SESSION['user']) || empty($_SESSION['user'])) {
+    // pas de session on redirige vers la page de connexion.
+    header('location: administrationHome.php');
+}else{
+    session_destroy(); 
+}
  ?>
 
 

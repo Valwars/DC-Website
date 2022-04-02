@@ -23,7 +23,8 @@ const enableDarkMode = () => {
     mode_choice_Icon.classList.add("itLink");
 
     if (topArrow != null) {
-        topArrow.src = "../css-images/TopDark.png";
+        const url = "../../css-images/TopDark.png"
+        topArrow.src = url;
 
     }
 
@@ -42,7 +43,7 @@ const disableDarkMode = () => {
     mode_choice_Icon.classList.add("itLink");
 
     if (topArrow != null) {
-        topArrow.src = "../css-images/TopLight.png";
+        topArrow.src = "../../css-images/topLight.png";
 
     }
 
@@ -68,8 +69,5 @@ mode_choice_Toggle.addEventListener("click", () => {
         disableDarkMode();
         console.log(darkMode);
     }
-
-
-
 
 })

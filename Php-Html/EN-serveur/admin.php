@@ -32,7 +32,9 @@
                 // Si le mot de passe est le bon
                 if(password_verify($password, $data['mdp']))
                 {
-                    // On créer la session et on redirige sur landing.php
+                    // On créer la session et on redirige 
+                    $_SESSION['user'] = $data['name'];
+
                     header('Location: ../Anglais/EN-adminGestion.php?token=validation_token');
                     die();
                 }else{ header('Location: ../Anglais/EN-administrationHome.php?login_err=password'); die(); }

@@ -515,10 +515,12 @@ strong {
     #logoName {
         margin-top: 2%;
         margin-left: 3%;
-        width: 50%;
+        width: fit-content;
     }
     #logoName h2 {
         font-size: 130%;
+        width: 100%;
+        margin-left: 3%;
     }
     .nav-close {
         display: none;
@@ -538,11 +540,14 @@ strong {
         right: 6%;
     }
     #PresentationDiv h3 {
-        font-size: 130%;
+        font-size: 150%;
     }
     #navList {
         flex-direction: column;
         display: none;
+    }
+    #PresentationDiv {
+        background-image: url("bg_phone.png");
     }
     #subemenu {
         padding-right: 2%;

@@ -13,10 +13,9 @@
 
 <div class="top" id="scroll_to_top">
 
-<img id="topImg" src="../../css-images/TopLight.png" alt="Retourner en haut" />
+<img id="topImg" src="../../css-images/topLight.png" alt="Retourner en haut" />
+
 </div>
-
-
 
     <?php include 'menu_bar.php'; ?>
 
@@ -34,6 +33,8 @@
 
         var itemSelected = document.getElementById("Prose");
         itemSelected.id = "selectedItem";
+
+     
     </script>
 
 
