@@ -67,6 +67,6 @@ document.getElementById("french").addEventListener('click', (event)=>{
 <script src="../../JavaScript/menuResponsive.js"></script>
 <script src="../../JavaScript/goToTop.js"></script>
 
+<?php 
 
-
-
+?>
