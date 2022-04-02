@@ -2,6 +2,8 @@
 
 Site web développé dans le cadre d'un stage de L2.
 
+Responsive design : Desktop, laptop, smartphone.
+
 Languages utilisés : Php, html, css, javascript et MySQL.
 
 Durant ce stage j'ai découvert et appris à gérer une base de donnée distante et à faire des pages dynamiques notamment avec l'aide de PHP et MySQL.
