@@ -68,5 +68,5 @@ document.getElementById("french").addEventListener('click', (event)=>{
 <script src="../../JavaScript/goToTop.js"></script>
 
 <?php 
-
+ // code
 ?>
