@@ -15,7 +15,7 @@ Les fichiers du sites sont composés de :
   - un répertoire "Php-Html" composé des pages (Francais/Anglais) et des fichiers de gestion du server.
   - un répertoire "uploads" composé des fichiers uploadés par l'admin.
 
-Pour visualiser le site sur un serveur local, je conseil XAMPP (https://www.apachefriends.org/fr/index.html), il y a bien d'autres alternatives sur le net si XAMPP ne fonctionne pas sur votre OS (WAMP, MAMP...)
+Pour visualiser le site sur un serveur local, je conseil XAMPP (https://www.apachefriends.org/fr/index.html), il y a bien d'autres alternatives sur le net (WAMP, MAMP...) si XAMPP ne fonctionne pas sur votre OS.
 
 Outils utilisés :
 
