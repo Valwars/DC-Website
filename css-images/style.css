@@ -1,0 +1,590 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+/* VARIABLES DE STYLE CSS */
+
+:root {
+    --font-style: 'Nunito Sans', sans-serif;
+    --background_color: white;
+    /*  THEME NOIR */
+    --ThemeColor: #000000;
+    --ThemeColor2: #737373;
+    --fontColor: #000000;
+    --hoverDiv: #f6f6f6;
+    --linkColor: #737CC5;
+    /* THEME VERT 
+    --ThemeColor: #8DA290;
+    --ThemeColor2: #465148;
+    --fontColor: #465148;
+    */
+}
+
+body {
+    margin: auto;
+    font-family: var(--font-style);
+    background-color: var( --background_color);
+}
+
+body::-webkit-scrollbar {
+    overflow-x: hidden;
+    /* This is the magic bit for WebKit */
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 3%;
+    background-color: var( --background_color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.darkMode {
+    /* GREEN
+    --ThemeColor: #FFFFFF;
+    --ThemeColor2: #B2B2B2;
+    --fontColor: #FFFFFF;
+    --background_color: #262926;
+    /*  DARK BLACK     */
+    --ThemeColor: #FFFFFF;
+    --ThemeColor2: #B2B2B2;
+    --fontColor: #FFFFFF;
+    --background_color: #212128;
+    --hoverDiv: #2a2a30;
+    --linkColor: #B2B2B2;
+}
+
+#navBar {
+    background-color: var(--background_color);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logoName {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+
+.lico {
+    font-size: 175%;
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 4%;
+    color: var(--ThemeColor);
+}
+
+#mail {
+    width: 80%;
+}
+
+#logoName h2 {
+    font-weight: 1000;
+    color: var(--ThemeColor);
+}
+
+#logoName a :hover {
+    color: var(--ThemeColor2);
+}
+
+#navList {
+    position: relative;
+    width: 150%;
+    display: flex;
+    flex-direction: row;
+}
+
+#navList li {
+    font-weight: 1000;
+    list-style: none;
+    margin: auto;
+}
+
+.item {
+    width: fit-content;
+}
+
+#navList li :hover {
+    color: var(--ThemeColor);
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+nav>.submenu::after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.submenu {
+    display: none;
+    border-top: 0;
+    border-radius: 10px;
+}
+
+.submenu li {
+    padding: 3%;
+}
+
+#contact {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drap {
+    width: 50%;
+    cursor: pointer;
+}
+
+#english {
+    display: none;
+}
+
+#contact h2 {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 10%;
+}
+
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    padding: 0px;
+    margin: auto;
+    z-index: 1000;
+    padding-left: 10%;
+    padding-bottom: 1%;
+}
+
+#scroll_to_top {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
+
+#scroll_to_top img {
+    width: 25px;
+}
+
+.submenu {
+    background-color: var(--background_color);
+    width: 100%;
+}
+
+.submenu li {
+    color: var(--ThemeColor2);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.submenu li:hover a {
+    color: var(--font-main-color);
+}
+
+.submenu li a {
+    font-size: 90%;
+    color: var(--font-menuItem-color);
+}
+
+#cnrs {
+    width: 20%;
+}
+
+#cirimat {
+    width: 57%;
+}
+
+#sourcesImg {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 100%;
+    margin-top: 10%;
+    margin-left: 18%;
+}
+
+#sourcesImg a {
+    color: var(--ThemeColor);
+    padding-bottom: 5%;
+}
+
+#sourcesImg h3 {
+    border-bottom: 1px solid var(--fontColor);
+    margin-right: 40%;
+}
+
+#cnrs {
+    margin-left: 18%;
+}
+
+#Bienvenue p {
+    margin-top: 2%;
+}
+
+#PresentationDiv {
+    display: table;
+    width: 100%;
+    height: 350px;
+    background-image: url("Un pas de plus vers la recherche.gif");
+    background-size: cover;
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
+
+#PresentationDiv h3 {
+    display: table-cell;
+    text-align: center;
+    font-size: 300%;
+    height: inherit;
+    vertical-align: middle;
+    /* optional to show extent of element */
+    color: white;
+    text-shadow: -1px 0 #737373, 0 1px #737373, 1px 0 #737373, 0 -1px #737373;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5%;
+    color: var(--fontColor);
+}
+
+strong {
+    color: var(--ThemeColor);
+    font-size: 110%;
+}
+
+#cv {
+    width: 30%;
+    margin-left: 17%;
+}
+
+.pres h2 {
+    padding-bottom: 2%;
+    border-bottom: 1px solid var(--ThemeColor);
+}
+
+.pres {
+    width: 65%;
+    margin-left: 17%;
+}
+
+#encadrements h3 {
+    margin-top: 5%;
+}
+
+#navList i {
+    font-size: 85%;
+}
+
+#navList a i {
+    color: var(--ThemeColor2);
+}
+
+.itLink {
+    color: var(--ThemeColor2);
+}
+
+#selectedItem {
+    color: var(--ThemeColor);
+}
+
+#loginForm {
+    width: 30%;
+    color: var(--ThemeColor);
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+#loginForm h3 {
+    margin-top: 10%;
+}
+
+#loginForm input {
+    width: 100%;
+}
+
+#conne {
+    text-align: center;
+    color: var(--ThemeColor);
+}
+
+#btnSubmit {
+    width: 100%;
+    margin-top: 10%;
+    border: none;
+    padding: 2%;
+    margin-bottom: 10%;
+}
+
+#projets {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.projet {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    border-bottom: 1px solid var(--ThemeColor2);
+    padding-top: 5%;
+}
+
+.projet img {
+    width: 40%;
+    max-height: 300px;
+    margin-left: 5%;
+}
+
+.projet p {
+    width: 50%;
+    margin: auto;
+    color: var(--ThemeColor);
+}
+
+#pro {
+    color: var(--ThemeColor);
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px solid var(--ThemeColor);
+    padding-bottom: 1.5%;
+}
+
+#projets .projet:hover {
+    background-color: var(--hoverDiv);
+    transition: background-color 0.5s linear;
+}
+
+#gestionPro {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+#existantPro {
+    border-left: 1px solid var(--fontColor);
+    padding-left: 5%;
+    margin-left: 20%;
+}
+
+#existantPro h3 {
+    border-bottom: 1px solid var(--ThemeColor2);
+    padding-bottom: 5%;
+}
+
+#existantPro div {
+    margin-top: 5%;
+}
+
+#addPro button {
+    margin-top: 20%;
+}
+
+.linkdelete {
+    color: var(--ThemeColor2);
+}
+
+#newProjet textarea {
+    width: 100%;
+}
+
+#outils {
+    width: 200px;
+    margin: auto;
+}
+
+#outils h3 {
+    color: var(--ThemeColor);
+    text-align: center;
+}
+
+.selected {
+    border-bottom: 1px solid var(--ThemeColor2);
+}
+
+#txt {
+    resize: none;
+}
+
+#tableMat h2 {
+    border-bottom: 1px solid var(--ThemeColor);
+    padding-bottom: 2%;
+}
+
+#tableMat h3 {
+    margin-top: 3%;
+}
+
+#ltable li {
+    font-size: 110%;
+    margin: 1%;
+}
+
+#ltable li:hover,
+#tableMat h3:hover {
+    color: var(--ThemeColor2);
+    cursor: pointer;
+}
+
+.sectionProse h2 {
+    padding-bottom: 2%;
+    border-bottom: 1px solid var(--ThemeColor);
+}
+
+.sectionProse a {
+    color: var(--linkColor);
+}
+
+.sectionProse h3 {
+    width: fit-content;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid var(--ThemeColor);
+}
+
+#contact a {
+    color: var(--linkColor);
+    font-weight: 300;
+}
+
+#contact div {
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 480px) {
+    .nav-open,
+    .nav-close {
+        display: none;
+    }
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 480px) {
+    #sourcesImg {
+        display: flex;
+        flex-direction: column;
+    }
+    #sourcesImg img {
+        margin-top: 15%;
+    }
+    section {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 90%;
+    }
+    .lico {
+        margin: auto;
+        font-size: 150%;
+    }
+    nav li:hover .submenu {
+        left: 0%;
+    }
+    #logoName {
+        margin-top: 2%;
+        margin-left: 3%;
+        width: 50%;
+    }
+    #logoName h2 {
+        font-size: 130%;
+    }
+    .nav-close {
+        display: none;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+    .nav-close i {
+        color: var(--ThemeColor2);
+    }
+    .nav-open i {
+        color: var(--ThemeColor2);
+    }
+    .nav-open {
+        font-size: 130%;
+        position: absolute;
+        top: 27%;
+        right: 6%;
+    }
+    #PresentationDiv h3 {
+        font-size: 130%;
+    }
+    #navList {
+        flex-direction: column;
+        display: none;
+    }
+    #subemenu {
+        padding-right: 2%;
+    }
+    .elements {
+        text-align: left;
+    }
+    #projets {
+        width: 90%;
+    }
+    .projet {
+        flex-direction: column;
+    }
+    .projet img {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    #pro {
+        width: 90%;
+    }
+    #contact {
+        text-align: center;
+        margin: auto;
+    }
+    .pres {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    #cv {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    #tableMat {
+        width: 90%;
+        margin: auto;
+    }
+    .sectionProse {
+        width: 90%;
+        margin: auto;
+    }
+    /* Change la taille de police du texte du menu */
+}
