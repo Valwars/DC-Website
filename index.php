@@ -125,3 +125,7 @@ document.getElementById("french").addEventListener('click', (event)=>{
 
 
 </html>
+
+<?php
+    // code
+?>
