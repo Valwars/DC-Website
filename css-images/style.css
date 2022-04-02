@@ -482,6 +482,80 @@ strong {
     margin: auto;
 }
 
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    margin: 5px 0 22px 0;
+    height: 30px;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.modif_user {
+    width: 100%;
+    text-align: center;
+    color: var(--fontColor);
+    cursor: pointer;
+}
+
+#disc {
+    color: var(--fontColor);
+}
+
 @media (min-width: 480px) {
     .nav-open,
     .nav-close {
@@ -493,7 +567,11 @@ strong {
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
     #sourcesImg {
+        width: fit-content;
         display: flex;
         flex-direction: column;
     }
@@ -510,7 +588,10 @@ strong {
         font-size: 150%;
     }
     nav li:hover .submenu {
-        left: 0%;
+        left: -10px;
+        top: 30px;
+        padding: 10px;
+        border-radius: 10px;
     }
     #logoName {
         margin-top: 2%;
@@ -536,11 +617,11 @@ strong {
     .nav-open {
         font-size: 130%;
         position: absolute;
-        top: 27%;
+        top: 36%;
         right: 6%;
     }
     #PresentationDiv h3 {
-        font-size: 150%;
+        font-size: 160%;
     }
     #navList {
         flex-direction: column;
@@ -548,9 +629,6 @@ strong {
     }
     #PresentationDiv {
         background-image: url("bg_phone.png");
-    }
-    #subemenu {
-        padding-right: 2%;
     }
     .elements {
         text-align: left;
@@ -590,6 +668,9 @@ strong {
     .sectionProse {
         width: 90%;
         margin: auto;
+    }
+    #Administration {
+        display: none;
     }
     /* Change la taille de police du texte du menu */
 }

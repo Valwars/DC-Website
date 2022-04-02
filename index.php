@@ -52,7 +52,7 @@
 
                         <li><a class="itLink" href="Php-Html/Francais/contact.php">Contact</a></li>
                         <li><a class="itLink" href="#">Liens utiles</a></li>
-                        <li><a class="itLink" href="Php-Html/Francais/administrationHome.php">Administration</a></li>
+                        <li><a class="itLink" id = "Administration" href="Php-Html/Francais/administrationHome.php">Administration</a></li>
 
                     </ul>
                 </li>
@@ -87,7 +87,7 @@
 
         <div id="sourcesImg">
 
-            <a href="# target="_blank">
+            <a href="#" target="_blank">
                 <div class="divAcc">
                     <img class="images" id="cirimat" src="css-images/cirimat_logo_hd.png">
                     <h3>Cirimat Toulouse</h3>

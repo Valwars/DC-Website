@@ -33,7 +33,7 @@
 
                         <li><a id="Contact"  class="itLink item" href = "EN-contact.php">Contact</a></li>
                         <li><a class="itLink item" href = "#">Useful links</a></li>
-                        <li><a id="Administration item" class="itLink" href = "EN-administrationHome.php">Administration</a></li>
+                        <li><a id="Administration" class="itLink item" href = "EN-administrationHome.php">Administration</a></li>
 
                     </ul>
                 </li>

@@ -10,6 +10,18 @@
 </head>
 
 
+<?php 
+
+session_start();
+
+
+if (isset($_SESSION['user']) || !empty($_SESSION['user'])) {
+    // pas de session on redirige vers la page de connexion.
+    header('location: adminGestion.php');
+}
+
+?>
+
 <body>
 
     <?php include 'menu_bar.php'; ?>

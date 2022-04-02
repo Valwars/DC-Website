@@ -69,6 +69,15 @@ if (!isset($_SESSION['user']) || empty($_SESSION['user'])) {
 
     </div>
 
+    <h4 class = "modif_user">
+        
+    <a id = "disc" href="../serveur/disconnect.php">Déconnexion</a>
+
+    </h4>
+  
+    <h4 class = "modif_user" onclick="openForm();">Changer de mot de passe</h4>
+
+
     <section id="gestionPro">
 
         <div id="addPro">
@@ -166,6 +175,39 @@ if (!isset($_SESSION['user']) || empty($_SESSION['user'])) {
       
 
     </section>
+
+
+    <div class="form-popup" id="myForm">
+  <form action="../serveur/change_password.php" class="form-container" method="POST">
+    <h1>Changer de mot de passe</h1>
+
+    <label for="name"><b>UserName :</b></label>
+    <input type="text" id = "name" name="name" required>
+
+    <label for = "current_password"><b>Mot de passe actuel</b></label>
+    <input type="password" id = "current_password" name="current_password" required>
+
+    <label for='new_password'><b>Nouveau mot de passe :</b></label>
+    <input type="password"  id = "new_password" name="new_password" required>
+    <label for='new_password_retype'><b>Re - Nouveau mot de passe</b></label>
+    <input type="password"  id = "new_password_retype" name="new_password_retype" required>
+
+    <button type="submit" class="btn">Changer</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+    <script>
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+    </script>
 
 
 </body>

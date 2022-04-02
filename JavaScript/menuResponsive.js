@@ -11,7 +11,7 @@ const open_menu = () => {
 
     nav.style.flexDirection = "column";
 
-    const elements = document.querySelectorAll("li");
+    const elements = navigation_liste.getElementsByTagName("li");
 
     Array.from(elements).forEach((element, index) => {
         element.style.textAlign = "center";
