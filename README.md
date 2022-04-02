@@ -19,7 +19,7 @@ Pour visualiser le site sur un serveur local, je conseil XAMPP (https://www.apac
 
 Outils utilisés :
 
-  - OS : MacOs.
+  - OS : MacOs Monterey.
   - Hardware : MacBook pro 13 M1 2020.
   - IDE : Visual Studio Code.
   - Browser : Brave.
