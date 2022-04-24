@@ -3,5 +3,5 @@
 <link rel="icon" href="../../css-images/atom.png">
 
 <?php
-    // code
+    // code (inutile, permet juste a github une meilleure mise en page.)
 ?>

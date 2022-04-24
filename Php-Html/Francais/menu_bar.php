@@ -1,3 +1,5 @@
+<!-- BARRE DE NAVIGATION commune à toutes les pages-->
+
 <header id = "hd" >
 
         <nav id="navBar">
@@ -12,7 +14,9 @@
 
             </div>
 
+            <!-- Affichage ouverture du menu (téléphone) -->
             <a class = "nav-open" id = "open"><i class="fas fa-bars"></i></a>
+            <!-- Affichage fermeture du menu (téléphone) -->
 		    <a class = "nav-close" id = "close"><i class="fas fa-times"></i></a>
 
             <ul id="navList">
@@ -38,8 +42,10 @@
                     </ul>
                 </li>
                
+                <!-- Light/Dark mode -->
                 <li  class="item" id = "mode"><a href="#" ><i id = "modeI" class="far fa-moon itLink"></i></a></li>
 
+                <!-- Francais/Anglais mode -->
                 <li id = "french" class="item"><img class="drap"  src = "../../css-images/france.png"></li>
                
   	</div>
@@ -68,5 +74,6 @@ document.getElementById("french").addEventListener('click', (event)=>{
 <script src="../../JavaScript/goToTop.js"></script>
 
 <?php 
- // code
+    // code (inutile, permet juste a github une meilleure mise en page.)
+
 ?>

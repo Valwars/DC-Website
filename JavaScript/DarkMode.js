@@ -12,7 +12,7 @@ const topArrow = document.getElementById("topImg");
 
 
 
-
+// Fonction activer darkmode
 const enableDarkMode = () => {
 
     document.body.classList.add("darkMode");
@@ -33,6 +33,7 @@ const enableDarkMode = () => {
 
 }
 
+// Fonction désactiver darkmode
 
 const disableDarkMode = () => {
     document.body.classList.remove("darkMode");

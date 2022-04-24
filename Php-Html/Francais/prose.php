@@ -17,9 +17,13 @@
 
 </div>
 
+    <!-- Barre de navigation -->
+
     <?php include 'menu_bar.php'; ?>
 
     <script>
+        // Change la couleur de l'item correspondant au titre de la page selectionné.
+
         document.querySelectorAll('.itLink').forEach(item => {
 
 
@@ -243,12 +247,15 @@ Membres du jury : Pr. M. Broyer (Université Claude Bernard Lyon I), DR. C. Dele
 
     <script>
 
+        
+        // applique à tout les éléments du sommaire la fonction "scrollto"
         var sommaireElements = document.getElementsByClassName("elements");
 
         for (var i = 0; i < sommaireElements.length; i++) {
             sommaireElements[i].addEventListener('click', scrollto, false);
         }
         
+        // Cette fonction permet le scroll automatique vers un élément de la page.
         function scrollto(event){
             var yOffset = -125
             const target1 = document.getElementById('p'+ event.target.id.substr(1, 2))

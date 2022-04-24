@@ -14,7 +14,6 @@
 
 session_start();
 
-
 if (isset($_SESSION['user']) || !empty($_SESSION['user'])) {
     // pas de session on redirige vers la page de connexion.
     header('location: adminGestion.php');
@@ -24,9 +23,13 @@ if (isset($_SESSION['user']) || !empty($_SESSION['user'])) {
 
 <body>
 
+    <!-- Barre de navigation -->
+
     <?php include 'menu_bar.php'; ?>
 
     <script>
+        // Change la couleur de l'item correspondant au titre de la page selectionné.
+
         document.querySelectorAll('.itLink').forEach(item => {
 
             if (item.id = "selectedItem") {
@@ -49,10 +52,10 @@ if (isset($_SESSION['user']) || !empty($_SESSION['user'])) {
     </div>
 
 
-
-
         <h2 id="conne">Page de connexion administrateur</h2>
 
+        <!-- Différent messages d'erreur -->
+        
         <div class="login-form">
         <?php
         if (isset($_GET['login_err'])) {

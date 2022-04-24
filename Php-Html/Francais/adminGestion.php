@@ -15,9 +15,12 @@
 
 <body>
 
+    <!-- Barre de navigation -->
     <?php include 'menu_bar.php'; ?>
 
     <script>
+
+        // Change la couleur de l'item correspondant au titre de la page selectionné.
         document.querySelectorAll('.itLink').forEach(item => {
 
 
@@ -32,14 +35,17 @@
         var itemSelected = document.getElementById("Administration");
         itemSelected.id = "selectedItem";
 
+        // fonction qui s'appelle lorsque l'admin essaye de supprimer un projet (message de confirmation).
 
         function DelComment(id) {
-            if (confirm("Voulez vous vraiment supprimer cet article ?")) {
+            if (confirm("Voulez vous vraiment supprimer ce projet ?")) {
                 window.location = '../serveur/deleteProjet.php?id=' + id;
             } else {
-                alert("L'article n'a pas été supprimé.")
+                alert("Le projet n'a pas été supprimé.")
             }
         }
+
+        // Permet à la zone de texte de s'adapter à l'écriture.
 
         function updateTextareaHeight(input) {
             input.style.height = 'auto';
@@ -100,6 +106,7 @@
 
         </div>
 
+        <!-- Dans cette partie, on afficher dans les différentes divisions les données du serveurs (projets, outils...)-->
 
         <form id="existantPro">
             <h3>Projets existants :</h3>
@@ -163,6 +170,8 @@
     </section>
 
     <div class="form-popup" id="myForm">
+
+    <!-- Formulaire de modification du mot de passe. -->
   <form action="../serveur/change_password.php" class="form-container" method="POST">
     <h1>Changer de mot de passe</h1>
 
@@ -184,14 +193,16 @@
 
 
     <script>
+        // affichage du formulaire
         function openForm() {
-  document.getElementById("myForm").style.display = "block";
-  
-}
+            document.getElementById("myForm").style.display = "block";
+        
+        }
+        // cacher le formulaire
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
     </script>
 
 

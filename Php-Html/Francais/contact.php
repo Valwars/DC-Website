@@ -11,9 +11,13 @@
 
 <body>
 
+    <!-- Barre de navigation -->
+
     <?php include 'menu_bar.php'; ?>
 
     <script>
+        // Change la couleur de l'item correspondant au titre de la page selectionné.
+
         document.querySelectorAll('.itLink').forEach(item => {
 
 

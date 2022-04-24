@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Page d'accueil du site -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <title>Accueil - DC.</title>
 </head>
 
+<!-- Menu bar -->
 <header>
         <nav id="navBar">
 
@@ -79,7 +81,7 @@
     <section id="Bienvenue">
 
         <h3>Bienvenue.</h3>
-        <p>Je suis Damien Connetable et je travail principalement dans les simulations à l'échelle atomique (DFT), interstitiels (hydrogène, carbone, azote et oxygène), systèmes métalliques et oxydes, approches multi-échelles, métallurgie, fragilisation par l'hydrogène, Corrosion sous contrainte, diffusion, solubilité.</p>
+        <p>Je suis Damien Connetable et je travaille principalement dans les simulations à l'échelle atomique (DFT), interstitiels (hydrogène, carbone, azote et oxygène), systèmes métalliques et oxydes, approches multi-échelles, métallurgie, fragilisation par l'hydrogène, Corrosion sous contrainte, diffusion, solubilité.</p>
         <h4>Ce site traite de mes principales activités, en voici quelques exemples :</h4>
         <p>- Charge de recherche CNRS</p>
         <p>- Chercheur - Habilité à diriger des recherches (HDR)</p>

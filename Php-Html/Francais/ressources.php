@@ -13,9 +13,14 @@
 
 <body>
 
+<!-- Barre de navigation -->
+
 <?php include 'menu_bar.php'; ?>
 
 <script>
+
+    // Change la couleur de l'item correspondant au titre de la page selectionné.
+
     document.querySelectorAll('.itLink').forEach(item => {
 
 
@@ -41,9 +46,12 @@
 </div>
 
 <div id = "outils" class = "selected">
+
 <h3>Outils développés</h3>
 
 </div>
+
+<!-- Affiche les projets "outils" -->
 <section id = "projets">
 
         <?php

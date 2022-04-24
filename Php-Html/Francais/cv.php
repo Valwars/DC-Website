@@ -14,13 +14,17 @@
 <div class="top" id="scroll_to_top">
 
 <img id="topImg" src="../../css-images/TopLight.png" alt="Retourner en haut" />
+
 </div>
 
+    <!-- Barre de navigation -->
 
     <?php include 'menu_bar.php'; ?>
 
 
     <script>
+        // Change la couleur de l'item correspondant au titre de la page selectionné.
+
         document.querySelectorAll('.itLink').forEach(item => {
 
 
