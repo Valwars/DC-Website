@@ -21,7 +21,7 @@ Pour visualiser le site sur un serveur local, je conseil XAMPP (https://www.apac
 
 Vous retrouverez le code de la connexion à la base dans le fichier /Php-Html/serveur/connexion_bdd.php, des modifications seront à effectuer potentiellement en fonction du serveur/SGBD.
 
-J'ai aussi ajouté les données de la base que j'ai utilisés (identifiant, mot de passe) au fichiers pour qu'ils vous soient accessibles.
+J'ai aussi ajouté le script de création de table + les données utilisées (identifiant, mot de passe) aux fichiers pour qu'ils vous soient accessibles.
 
 Outils utilisés :
 
