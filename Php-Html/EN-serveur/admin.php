@@ -2,15 +2,8 @@
     session_start(); // Démarrage de la session
 
 
-    try 
-    {
-        $bdd =  new PDO('mysql:host=localhost;dbname=Damien Connetable WebSite;charset=utf8', 'root', '');
-    }
-    catch(PDOException $e)
-    {
-        die('Erreur : '.$e->getMessage());
-    }
-   
+    include '../serveur/connexion_bdd.php';
+
 
   
     if(!empty($_POST['name']) && !empty($_POST['password'])) // Si il existe les champs email, password et qu'il sont pas vident

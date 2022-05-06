@@ -5,11 +5,8 @@ move_uploaded_file($_FILES["img"]["tmp_name"],  "../../uploads/".$_FILES["img"][
 move_uploaded_file($_FILES["file"]["tmp_name"],  "../../uploads/".$_FILES["file"]["name"]);
 
 
-try {
-    $bdd =  new PDO('mysql:host=localhost;dbname=Damien Connetable WebSite;charset=utf8', 'root', '');
-} catch (PDOException $e) {
-    die('Erreur : ' . $e->getMessage());
-}
+include '../serveur/connexion_bdd.php';
+
 
 
 $insert = $bdd->prepare('INSERT INTO Projets(nomProjet,type,imagePath, pdfPath) VALUES(:nomProjet,:type,:imagePath, :pdfPath)');

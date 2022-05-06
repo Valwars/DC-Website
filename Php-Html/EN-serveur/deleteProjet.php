@@ -1,9 +1,5 @@
 <?php 
-try {
-    $bdd =  new PDO('mysql:host=localhost;dbname=Damien Connetable WebSite;charset=utf8', 'root', '');
-} catch (PDOException $e) {
-    die('Erreur : ' . $e->getMessage());
-}
+include '../serveur/connexion_bdd.php';
 
 $id = $_GET['id'];
 

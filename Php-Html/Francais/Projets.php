@@ -59,11 +59,8 @@
 
         <?php
 
-        try {
-            $bdd =  new PDO('mysql:host=localhost;dbname=Damien Connetable WebSite;charset=utf8', 'root', '');
-        } catch (PDOException $e) {
-            die('Erreur : ' . $e->getMessage());
-        }
+        include '../serveur/connexion_bdd.php';
+
 
         $sqlQuery = "SELECT * FROM Projets WHERE type = 'projet' ORDER BY idProjet DESC  ";
         $recipesStatement = $bdd->prepare($sqlQuery);
