@@ -17,7 +17,11 @@ Les fichiers du sites sont composés de :
   - un répertoire "Php-Html" composé des pages (Francais/Anglais) et des fichiers de gestion du serveur.
   - un répertoire "uploads" composé des fichiers uploadés par l'admin (images de projets, pdf...).
 
-Pour visualiser le site sur un serveur local, je conseil XAMPP (https://www.apachefriends.org/fr/index.html), il y a bien d'autres alternatives sur le net (WAMP, MAMP...) si XAMPP ne fonctionne pas sur votre OS.
+Pour visualiser le site sur un serveur local, je conseil XAMPP (https://www.apachefriends.org/fr/index.html), il y a bien d'autres alternatives sur le net (WAMP, MAMP...) si XAMPP ne fonctionne pas sur votre OS, il vous faudra ensuite ajouter ce projet dans le repertoire "htdocs" dans les fichiers du logiciel choisi, lancer le serveur local puis taper dans la barre de recherche de votre navigateur ceci : "http://localhost/DC-WebSite/index.php" pour accéder à la page d’acceui du site.
+
+Vous retrouverez le code de la connexion à la base dans le fichier /Php-Html/serveur/connexion_bdd.php, des modifications seront à effectuer potentiellement en fonction du serveur/SGBD.
+
+J'ai aussi ajouté le script de création de table + les données utilisées (identifiant, mot de passe) aux fichiers pour qu'ils vous soient accessibles.
 
 Outils utilisés :
 
