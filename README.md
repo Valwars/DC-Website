@@ -19,6 +19,10 @@ Les fichiers du sites sont composés de :
 
 Pour visualiser le site sur un serveur local, je conseil XAMPP (https://www.apachefriends.org/fr/index.html), il y a bien d'autres alternatives sur le net (WAMP, MAMP...) si XAMPP ne fonctionne pas sur votre OS.
 
+Vous retrouverez le code de la connexion à la base dans le fichier /Php-Html/serveur/connexion_bdd.php, des modifications seront à effectuer potentiellement en fonction du serveur/SGBD.
+
+J'ai aussi ajouté les données de la base que j'ai utilisés (identifiant, mot de passe) au fichiers pour qu'ils vous soient accessibles.
+
 Outils utilisés :
 
   - OS : MacOs Monterey.
