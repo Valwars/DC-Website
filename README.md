@@ -26,8 +26,8 @@ J'ai aussi ajouté le script de création de table + les données utilisées (id
 
 Pour vous conneter sur le site les logs sont :
 
-  username : AdminRootConnetable
-  mdp : test
+  - username : AdminRootConnetable
+  - mdp : test
   
 Vous pouvez changer le mot de passe à tout moment.
 
