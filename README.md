@@ -24,6 +24,13 @@ Vous retrouverez le code de la connexion à la base dans le fichier /Php-Html/se
 
 J'ai aussi ajouté le script de création de table + les données utilisées (identifiant, mot de passe) aux fichiers pour qu'ils vous soient accessibles.
 
+Pour vous conneter sur le site les logs sont :
+
+  username : AdminRootConnetable
+  mdp : test
+  
+Vous pouvez changer le mot de passe à tout moment.
+
 Notes : 
 
 Pour les projets que j'ai enregistré dans la base, les fichiers pdf relatifs aux projets sont des pdf de test, je vous laisse évidemment supprimer ces projets là pour ajouter les votres et lier les bon fichiers.
